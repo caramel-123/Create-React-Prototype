@@ -56,11 +56,11 @@ export default function Landing() {
             transition={{ duration: 2, repeat: Infinity }}
             className="text-4xl md:text-6xl text-pink-500 mb-6 tracking-wider"
           >
-            5 HEARTS
+            LUV CARDS
           </motion.h1>
 
           {/* Logo image */}
-          <div className="mb-8 ml-40">
+          <div className="mb-8 ml-10">
   <img 
     src={logoImage} 
     alt="Valentine Logo" 
