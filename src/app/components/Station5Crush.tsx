@@ -50,7 +50,7 @@ export default function Station5Crush() {
               STATION 5
             </div>
             <p className="text-purple-700 text-xs md:text-sm leading-loose">
-              ENTER YOUR CRUSH/<br/>FAVORITE PERSON'S NAME
+              ENTER YOUR<br/>FAVORITE PERSON'S NAME
             </p>
           </div>
 
