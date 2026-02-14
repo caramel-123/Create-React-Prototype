@@ -58,10 +58,10 @@ export default function TarotCard({ card, index }: TarotCardProps) {
       className="perspective-1000"
     >
       <div className={`
-        relative bg-white rounded-2xl p-6
+        relative bg-white rounded-2xl p-4
         shadow-xl ${getRarityGlow(card.message.rarity)}
         border-4 bg-gradient-to-br ${getRarityColor(card.message.rarity)}
-        min-h-[320px] flex flex-col
+        w-64 h-96 flex flex-col
       `}>
         {/* Rarity indicator */}
         <div className="absolute top-3 right-3">

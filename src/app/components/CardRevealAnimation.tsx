@@ -13,11 +13,11 @@ interface CardRevealAnimationProps {
 const getRarityColor = (rarity: Rarity) => {
   switch (rarity) {
     case 'common':
-      return '#FFB3D9';
+      return '#d4d4d4ff';
     case 'rare':
-      return '#C8B6FF';
+      return '#81d175ff';
     case 'legendary':
-      return '#FFEB99';
+      return '#37a0ebff';
   }
 };
 

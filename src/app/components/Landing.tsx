@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router';
-import { Heart } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Button } from './ui/button';
+import logoImage from '../data/images/bscs1-4-logo.jpeg';
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -24,9 +23,7 @@ export default function Landing() {
               y: typeof window !== 'undefined' ? window.innerHeight + 100 : 1000,
               opacity: 0.4,
             }}
-            animate={{
-              y: -100,
-            }}
+            animate={{ y: -100 }}
             transition={{
               duration: Math.random() * 15 + 10,
               repeat: Infinity,
@@ -40,12 +37,14 @@ export default function Landing() {
         ))}
       </div>
 
-      <div className="relative z-10 text-center px-6">
+      {/* Main content */}
+      <div className="relative z-10 text-center px-6 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Title */}
           <motion.h1
             animate={{ 
               textShadow: [
@@ -57,33 +56,55 @@ export default function Landing() {
             transition={{ duration: 2, repeat: Infinity }}
             className="text-4xl md:text-6xl text-pink-500 mb-6 tracking-wider"
           >
-            5LENTINE'S
+            5 HEARTS
           </motion.h1>
-          
-          <div className="text-7xl md:text-9xl mb-8">💖</div>
-        </motion.div>
-        
-        <p className="text-purple-700 text-sm md:text-base mb-12 max-w-lg mx-auto leading-loose"
-          style={{
-            textShadow: '2px 2px 0px rgba(255,255,255,0.6)',
-          }}
-        >
-          DISCOVER YOUR<br/>VALENTINE TAROT CARDS<br/>AND YOUR LOVE VIBES!
-        </p>
 
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <button
-            onClick={() => navigate('/station-1')}
-            className="bg-gradient-to-r from-pink-400 to-purple-400 hover:from-pink-500 hover:to-purple-500 text-white px-10 py-5 text-sm md:text-base rounded-full border-4 border-white tracking-wider transition-all shadow-2xl"
-            style={{ 
-              textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
-            }}
+          {/* Logo image */}
+          <div className="mb-8 ml-40">
+  <img 
+    src={logoImage} 
+    alt="Valentine Logo" 
+    className="
+      w-36 h-36 md:w-48 md:h-48
+      object-contain
+      rounded-2xl
+      border-4 border-pink-300
+      shadow-xl shadow-pink-300/50
+      transition-transform transform hover:scale-105 hover:shadow-2xl
+    "
+  />
+</div>
+
+          {/* Subtitle */}
+          <p className="text-purple-700 text-sm md:text-base mb-12 max-w-lg mx-auto leading-loose"
+            style={{ textShadow: '2px 2px 0px rgba(255,255,255,0.6)' }}
           >
-            ► START
-          </button>
+            DISCOVER YOUR<br/>VALENTINE TAROT CARDS<br/>AND YOUR LOVE VIBES!
+          </p>
+
+          {/* Subtitle */}
+          <p className="text-xs md:text-sm mb-12 max-w-lg mx-auto leading-loose text-purple-500"
+            style={{ textShadow: '2px 2px 0px rgba(255,255,255,0.6)' }}
+          >
+            Caramel gits
+          </p>
+
+          {/* Start button */}
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <button
+              onClick={() => navigate('/station-1')}
+              className="
+                bg-gradient-to-r from-pink-400 to-purple-400 
+                hover:from-pink-500 hover:to-purple-500
+                text-white px-10 py-5 text-sm md:text-base 
+                rounded-full border-4 border-white 
+                tracking-wider transition-all shadow-2xl
+              "
+              style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}
+            >
+              ► START
+            </button>
+          </motion.div>
         </motion.div>
       </div>
     </div>
