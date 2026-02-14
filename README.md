@@ -1,4 +1,4 @@
-💜 5 Hearts
+💜 5 Hearts - (A Valentine Tarot Card Game)
 
 Discover your Valentine Tarot Cards and explore your love vibes with this interactive web application! Built with React and styled with Tailwind CSS, this app offers a fun and visually engaging way to experience love-themed tarot readings.
 
