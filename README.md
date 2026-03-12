@@ -66,9 +66,3 @@ valentine-app/
 📄 License
 
 This project is open-source and available under the MIT License.
-
-⸻
-
-I can also create a more visually appealing version with badges (like build status, license, React version) and GIF previews of your app in action.
-
-Do you want me to make that enhanced version too?
